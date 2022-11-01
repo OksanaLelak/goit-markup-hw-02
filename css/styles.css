@@ -1,0 +1,224 @@
+:root {
+	--primary-text-color: #757575;
+	--title-text-color: #212121;
+	--white-text-color: #FFFFFF;
+	--accent-color: #2196F3;
+	--second-color-logo: #000000;
+	--link-address-bottom-color: rgba(255, 255, 255, 0.6);
+	--hero-background-color: #2F303A;
+	--white-background-color: #ffffff;
+	--second-accent-background-color: #F5F4FA;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 0.03em;
+	background-color: var(--white-background-color);
+	color: var(--title-text-color)
+}
+
+/* Обнулення маркування списків */
+.list {
+	list-style: none;
+}
+
+/* Обнулення підкреслень у посиланнях */
+.link {
+	text-decoration: none;
+	color: var(--title-text-color);
+}
+
+/* Загальне для кнопок */
+.button {
+	font-family: inherit;
+	letter-spacing: 0.03em;
+	border: none;
+	cursor: pointer;
+}
+
+/* Логотип */
+.logo {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--accent-color);
+}
+
+.web-logo {
+	color: var(--accent-color);
+}
+
+.studio-logo {
+	color: var(--second-color-logo);
+}
+
+.logo-white {
+	color: var(--white-text-color);
+}
+
+.logo-black {
+	color: var(--second-color-logo);
+}
+
+/* Шапка сайту */
+.header-nav-link {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: var(--title-text-color);
+}
+
+.header-contact-link {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-contact-link:hover,
+.header-contact-link:focus {
+	color: var(--accent-color);
+}
+
+.header-nav-link.current {
+	color: var(--accent-color);
+}
+
+/* Секція */
+.section-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	color: var(--title-text-color);
+}
+
+/* Футер */
+.footer-contact-link {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	color: var(--link-address-bottom-color);
+}
+
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+	color: var(--accent-color);
+}
+
+.footer {
+	background-color: var(--hero-background-color);
+}
+
+.footer-contact-link.address {
+	color: var(--white-text-color);
+}
+
+/* Hero */
+.hero {
+	background-color: var(--hero-background-color);
+}
+
+.hero-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--white-text-color);
+}
+
+.hero-button {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	background-color: var(--accent-color);
+	color: var(--white-text-color);
+	cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+	background-color: var(--white-text-color);
+	color: var(--accent-color);
+}
+
+/* Особливості */
+.features-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+}
+
+.features-text {
+	font-size: 14px;
+	line-height: 1.71;
+	color: var(--primary-text-color);
+}
+
+/* Наша команда */
+.team-section {
+	background-color: var(--second-accent-background-color);
+}
+
+.team-worker {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19px;
+	text-align: center;
+}
+
+.team-profession {
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	color: var(--primary-text-color);
+}
+
+
+/* Портфоліо */
+.portfolio-button {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.63;
+	letter-spacing: 0.03em;
+	background-color: var(--second-accent-background-color);
+	color: var(--title-text-color);
+	cursor: pointer;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+	background-color: var(--accent-color);
+	color: var(--white-text-color);
+}
+
+.portfolio-link {
+	text-decoration: none;
+}
+
+.portfolio-list-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+	color: var(--title-text-color);
+}
+
+.portfolio-list-text {
+	font-size: 16px;
+	line-height: 1.87;
+	color: var(--primary-text-color);
+}
