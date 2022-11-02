@@ -97,6 +97,9 @@ body {
 	text-align: center;
 	color: var(--title-text-color);
 }
+.work-section {
+	background-color: var(--second-accent-background-color);
+}
 
 /* Футер */
 .footer-contact-link {
@@ -119,7 +122,7 @@ body {
 	color: var(--white-text-color);
 }
 
-/* Hero */
+/* Герой */
 .hero {
 	background-color: var(--hero-background-color);
 }
@@ -135,12 +138,10 @@ body {
 }
 
 .hero-button {
-	font-family: "Roboto", sans-serif;
+
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
-	align-items: center;
-	text-align: center;
 	letter-spacing: 0.06em;
 	background-color: var(--accent-color);
 	color: var(--white-text-color);
@@ -149,8 +150,8 @@ body {
 
 .hero-button:hover,
 .hero-button:focus {
-	background-color: var(--white-text-color);
-	color: var(--accent-color);
+	background-color: var(--accent-color);
+	color: var(--white-text-color);
 }
 
 /* Особливості */
@@ -178,7 +179,6 @@ body {
 	line-height: 1.19px;
 	text-align: center;
 }
-
 .team-profession {
 	font-size: 16px;
 	line-height: 1.19;
