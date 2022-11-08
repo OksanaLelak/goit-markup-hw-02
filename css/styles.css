@@ -17,9 +17,29 @@ body {
 	color: var(--title-text-color)
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+.container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 /* Обнулення маркування списків */
 .list {
 	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 /* Обнулення підкреслень у посиланнях */
@@ -28,8 +48,13 @@ body {
 	color: var(--title-text-color);
 }
 
+
+
 /* Загальне для кнопок */
 .button {
+	display: inline-block;
+	padding: 10px 32px;
+	border-radius: 4px;
 	font-family: inherit;
 	letter-spacing: 0.03em;
 	border: none;
@@ -62,12 +87,38 @@ body {
 }
 
 /* Шапка сайту */
-.header-nav-link {
+
+.header {
+	width: auto;
+	border-bottom: 1px solid #ececec;
+}
+
+.nav-flex{
+	display: flex;
+}
+.header-nav {
+	display: flex;
+	align-items: center;
+}
+
+.header-nav-items {
 	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
+	display: flex;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 93px;
+}
+.header-nav-items .header-nav-item + .header-nav-item {
+	margin-left: 50px;
+}
+.header-nav-items .link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
 	color: var(--title-text-color);
+	letter-spacing: 0.02em;
+	font-size: 14px;
+	line-height: 1.17;
 }
 
 .header-contact-link {
@@ -78,14 +129,35 @@ body {
 	color: var(--primary-text-color);
 }
 
-.header-nav-link:hover,
-.header-nav-link:focus,
 .header-contact-link:hover,
 .header-contact-link:focus {
 	color: var(--accent-color);
 }
 
-.header-nav-link.current {
+.header-contact-list {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+}
+.header-contact-list .header-contakt-item {
+		display: flex;
+		align-items: center;
+}
+.header-contact-list .header-contakt-item + .header-contakt-item{
+	margin-left: 50px;
+}
+ .header-nav-items .current {
+	color: var(--accent-color);
+}
+.header .header-nav-link {
+	color: var(--title-text-color);
+	letter-spacing: 0.02em;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
 	color: var(--accent-color);
 }
 
@@ -125,9 +197,17 @@ body {
 /* Герой */
 .hero {
 	background-color: var(--hero-background-color);
+	text-align: center;
+	width: auto;
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
 
 .hero-title {
+	max-width: 696px;
+	margin: auto;
+	margin-bottom: 30px;
+
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
